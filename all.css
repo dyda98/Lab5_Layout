@@ -1,0 +1,88 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #160404;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 15px;
+    background-color: #111;
+    color: white;
+    border: none;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+/@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    #main {
+        padding: 10px;
+    }
+
+    .sidebar {
+        width: 100%;
+        position: relative;
+    }
+}
+
+/* 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 2000px;
+    max-width: 1200px; /* Hii inahakikisha haipanuki zaidi kwenye screen kubwa 
+    margin: auto;
+    padding: 20px;
+} */
+
+#main {
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+.sidebar {
+    background-color: rgb(4, 4, 107);
+}
+
