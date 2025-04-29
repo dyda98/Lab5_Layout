@@ -1,0 +1,104 @@
+
+    <!-- Modal -->
+
+    <style>
+      .modal {
+  background-color: white;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 320px;
+
+}
+
+.modal h3 {
+  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: 500;
+  text-align: left;
+}
+
+select, input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.close-btn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.close-btn:hover,
+.save-btn:hover {
+  opacity: 0.9;
+}
+
+
+
+
+
+    </style>
+    <center>
+    
+              
+                <div class="modal">
+                  <div class="modal-content">
+                    <h3>Add New Allocation</h3>
+              
+                    <label for="instructor">Instructor</label>
+                    <select id="instructor">
+                      <option>Dr. Smith</option>
+                      <option>Prof. Jane Doe</option>
+                      <option>Mr. Johnson</option>
+                    </select>
+              
+                    <label for="course">Course</label>
+                    <select id="course">
+                      <option>CSC101 - Intro to Programming</option>
+                      <option>CSC102 - Data Structures</option>
+                    </select>
+              
+                    <label for="year">Year</label>
+                    <input type="text" id="year" placeholder="Enter year">
+              
+                    <label for="semester">Semester</label>
+                    <input type="text" id="semester" placeholder="Enter semester">
+              
+                    <div class="modal-buttons">
+                      <button class="close-btn"><a href="Dashboard.html" style="color: white; text-decoration: none;">Close</a></button>
+                      <button class="save-btn">Save Allocation</button>
+                    </div>
+                  </div>
+                </div>
+              
+              
+              </center>
