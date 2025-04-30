@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="boot/boot/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰</a> -->
+    <div>
+    <nav style="width: 270px; background-color: aqua; padding-top: 20px; padding-bottom: 20px; background-size: cover;">
+        <img src="suza.jpg" style="width: 100px; height: 50px;">
+    </nav>
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage_user.html">Manage Users</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage_student.html">Manage Students</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage_couse.html">Manage Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage_allocation.html">Manage Allocation</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage_result.html">Manage Results</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+     
+
+    
+    <div id="main">
+        <div id="main" class="container">
+            <nav style="width: 1000px;">
+                <a href="javascript:void(0)" class="closebtn"  onclick="closeNav()" style="background-color: blue; width: 100%; color: white;">☰</a>
+                <hr style="color: red; width: 100%; padding-left: 500px">
+                <button class="openbtn" onclick="openNav()">☰</button>
+            </nav>
+        
+
+
+    <div class="container mt-5">
+        <h2>Manage Students</h2>
+        <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#addStudentModal" style="background-color: green;"><a href="add student.html" style="color: white; text-decoration: none;">+Add New Student</a></button>
+
+        <table class="table table-striped" border ="1">
+            <thead>
+                <tr>
+                    <th>Reg. Number</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Sex</th>
+                    <th>Date of Birth</th>
+                    <th>Program</th>
+                    <th>Year</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>STU001</td>
+                    <td>Alice</td>
+                    <td>Johnson</td>
+                    <td>Female</td>
+                    <td>2000-05-15</td>
+                    <td>CS</td>
+                    <td>3</td>
+                    <td><button style="border-radius: 5px; background-color: orange;">Edit</button></td>
+                    <td><button style="border-radius: 5px; background-color: red;">Delete</button></td>
+                    <td><button style="border-radius: 5px; background-color: rgb(161, 155, 155);">Deactive</button></td>
+                </tr>
+            </tbody>
+        <tbody>
+            <tr>
+                <td>STU002</td>
+                <td>Michael</td>
+                <td>Smith</td>
+                <td>Male</td>
+                <td>1999-08-22</td>
+                <td>IT</td>
+                <td>2</td>
+                <td><button style="border-radius: 5px; background-color: orange;">Edit</button></td>
+                <td><button style="border-radius: 5px; background-color: red;">Delete</button></td>
+                <td><button style="border-radius: 5px; background-color: rgb(161, 155, 155);">Deactive</button></td>
+            </tr>
+        </tbody>
+        <tbody>
+            <tr>
+                <td>STU001</td>
+                <td>Alice</td>
+                <td>Johnson</td>
+                <td>Female</td>
+                <td>2001-03-10</td>
+                <td>SE</td>
+                <td>1</td>
+                <td><button style="border-radius: 5px; background-color: orange;">Edit</button></td>
+                <td><button style="border-radius: 5px; background-color: red;">Delete</button></td>
+                <td><button style="border-radius: 5px; background-color: green;">Active</button></td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+    
+</body>
+<script src="java.js"></script>
+</html
