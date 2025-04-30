@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar Example</title>
+    <link rel="stylesheet" href="all.css">
+</head>
+
+<body>
+   
+    <div class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <h4 style="color: yellow;">Chama Cha Mapinduzi (CCM)</h4>
+        <ul>
+            <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link" href="manage_user.html">Manage Users</a></li>
+            <li class="nav-item"><a class="nav-link" href="manage_student.html">Manage Students</a></li>
+            <li class="nav-item"><a class="nav-link" href="manage_couse.html">Manage Courses</a></li>
+            <li class="nav-item"><a class="nav-link" href="manage_allocation.html">Manage Allocation</a></li>
+            <li class="nav-item"><a class="nav-link" href="manage_result.html">Manage Results</a></li>
+        </ul>
+        </div>
+        </div>
+    </div>
+
+    <!-- Button to open sidebar -->
+    <button class="openbtn" onclick="openNav()">☰ Open Sidebar</button> 
+
+
+    <div id="main">
+<h2>Notifications</h2>
+<div id="main" class="container">
+    <?php while($row = $result->fetch_assoc()) { ?>
+        <div class="notification" data-timestamp="<?php echo strtotime($row['created_at']); ?>">
+            <p><?php echo $row['message']; ?></p>
+            <p><em  style="color: yellow;">Ilitumwa: <?php echo $row['created_at']; ?></em></p>
+        </div>
+    <?php } ?>
+</div>
+
+</body>
+</html>
+
+<?php
+// $conn->close();
+?>
+
+
+
+</body>
+<script src="java.js"></script>
+</html>
