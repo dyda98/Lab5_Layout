@@ -1,0 +1,96 @@
+ <!-- View Modal -->
+<style>
+  .modal {
+  background-color: white;
+  padding: 20px 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  width: 700px;
+  
+}
+
+.modal-content h3 {
+  margin-top: 0;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.save-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  opacity: 0.9;
+}
+
+.close-btn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+
+</style>
+<center>
+
+ <div class="modal">
+  <div class="modal-content">
+    <h3>Upload Results for Course:</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Registration No</th>
+          <th>Coursework Score</th>
+          <th>Exam Score</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>12345</td>
+          <td><input type="text" placeholder="Enter Coursework Score" /></td>
+          <td><input type="text" placeholder="Enter Exam Score" /></td>
+          <td><button class="save-btn">Save</button></td>
+        </tr>
+        <tr>
+          <td>12346</td>
+          <td><input type="text" placeholder="Enter Coursework Score" /></td>
+          <td><input type="text" placeholder="Enter Exam Score" /></td>
+          <td><button class="save-btn">Save</button></td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+    <div class="modal-footer">
+      <button class="close-btn"><a href="Dashboard.html" style="color: white; text-decoration: none;">Close</a></button>
+    </div>
+  </div>
+</div>
+</center>
