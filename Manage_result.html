@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="boot/boot/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰</a> -->
+    <div>
+    <nav style="width: 270px; background-color: aqua; padding-top: 20px; padding-bottom: 20px; background-size: cover;">
+        <img src="suza.jpg" style="width: 100px; height: 50px;">
+    </nav>
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage_user.html">Manage Users</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage_student.html">Manage Students</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage_couse.html">Manage Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage_allocation.html">Manage Allocation</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage_result.html">Manage Results</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+     
+
+    
+    <div id="main">
+        <div id="main" class="container">
+            <nav style="width: 1000px;">
+                <a href="javascript:void(0)" class="closebtn"  onclick="closeNav()" style="background-color: blue; width: 100%; color: white;">☰</a>
+                <hr style="color: red; width: 100%; padding-left: 500px">
+                <button class="openbtn" onclick="openNav()">☰</button>
+            </nav>
+       
+
+    
+
+    <div class="container mt-5">
+        <h2>Manage Results</h2>
+        <button class="btn btn-primary mb-3" data-bs-toggle="modal" data-bs-target="#uploadResultModal"><a href="upload result.html" style="color: white;text-decoration: none;">Upload Results</a></button>
+        <button class="btn btn-secondary mb-3" data-bs-toggle="modal" data-bs-target="#viewResultModal">View Results</button>
+
+        <table class="table table-striped" border="1">
+            <thead>
+                <tr>
+                    <th>Instructor</th>
+                    <th>Course</th>
+                    <th>Year</th>
+                    <th>Semister</th>
+                    <th>View Results</th>
+                    <th>Upload Results</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dr. John Doe</td>
+                    <td>CS101-Introduction to computer Science</td>
+                    <td>2024</td>
+                    <td>1</td>
+                    <td><button style="border-radius: 5px; background-color: blue;">View Results</button></td>
+                    <td><button style="border-radius: 5px; background-color:  green;">Upload Results</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Upload Modal -->
+    <div class="modal fade" id="uploadResultModal" tabindex="-1" aria-labelledby="uploadResultModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="uploadResultModalLabel">Upload Results</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                    <input type="file" class="form-control" required>
+                </div>
+                <div class="d-grid">
+                    <button type="submit" class="btn btn-primary">Upload</button>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+   
+  </body>
+  <script src="java.js"></script>
+  </html
