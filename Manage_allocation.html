@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="boot/boot/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="sidebar" id="sidebar">
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">☰</a> -->
+    <div>
+    <nav style="width: 270px; background-color: aqua; padding-top: 20px; padding-bottom: 20px; background-size: cover;">
+        <img src="suza.jpg" style="width: 100px; height: 50px;">
+    </nav>
+            <ul>
+                <li class="nav-item"><a class="nav-link" href="dashboard.html">Dashboard</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage_user.html">Manage Users</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage_student.html">Manage Students</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage_couse.html">Manage Courses</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage_allocation.html">Manage Allocation</a></li>
+                <li class="nav-item"><a class="nav-link" href="manage_result.html">Manage Results</a></li>
+            </ul>
+        </div>
+        </div>
+    </div>
+
+     
+
+    
+    <div id="main">
+        <div id="main" class="container">
+            <nav style="width: 1000px;">
+                <a href="javascript:void(0)" class="closebtn"  onclick="closeNav()" style="background-color: blue; width: 100%; color: white;">☰</a>
+                <hr style="color: red; width: 100%; padding-left: 500px">
+                <button class="openbtn" onclick="openNav()">☰</button>
+            </nav>
+       
+
+    
+            
+
+    <div class="container mt-5">
+        <h2>Manage Allocation</h2>
+        <button data-bs-toggle="modal" data-bs-target="#assignCourseModal" style="background-color:green;"><a href="add allocation.html" style="color: white; text-decoration: none;">Add New Allocation</a></button>
+
+        <table class="table table-striped" border="1">
+            <thead>
+                <tr>
+                    <th>Instructor</th>
+                    <th>Course</th>
+                    <th>Year</th>
+                    <th>Semister</th>
+                    <th>Edit</th>
+                    <th>Drop</th>
+                    <th>Enrolled Students</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dr.Smith</td>
+                    <td>CSC101-Intro to Programming</td>
+                    <td>2025</td>
+                    <td>1</td>
+                    <td><button style="border-radius: 5px; background-color: orange;">Edit</button></td>
+                <td><button style="border-radius: 5px; background-color: red;">Drop</button></td>
+                <td><button style="border-radius: 5px; background-color: rgb(21, 123, 158);">View</button></td>
+                
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+
+    
+</body>
+<script src="java.js"></script>
+</html>
